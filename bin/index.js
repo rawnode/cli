@@ -22,6 +22,8 @@
  const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
 
+const Couleurs = require('../modules/couleurs')
+
 class CLI extends require("../modules/base") {
 
   constructor(...arrayOfObjects) {
@@ -63,8 +65,10 @@ class CLI extends require("../modules/base") {
            fs.mkdir(this.path(this.command(3)), {recursive: true, mode: '777'}, error => {
              if(error) return console.log(error.message);
            })
-           console.log(this.Red('creating project, please wait ....'));
-           await exec(`git clone git@github.com:ongojs/ongojs.git ${this.path(this.command(3))}`);
+
+           const {Red, Green} = new Couleurs
+           console.log(Red('creating project, please wait ....'));
+           await exec(`git clone git@github.com:rawnode/app.git ${this.path(this.command(3))}`);
            process.chdir(this.path(this.command(3)));
            await exec(`git checkout dev`);
           //  await exec(`rm -rdf .git`);
@@ -75,10 +79,10 @@ class CLI extends require("../modules/base") {
           await exec(`rm -rdf .git`);
           await exec(`yarn `);
           // await exec(`npm update`);
-          await exec(`npm link ./`);
-          await exec(`ongo make:http-route UserRouter`);
-          await exec(`ongo make:tcp-route UserRouter`);
-          console.log(this.Green(`Project ${this.path(this.command(3)).split('/')[this.path(this.command(3)).split('/').length - 1]} created!`));
+          await exec(`npm link ./ --force`);
+          // await exec(`ongo make:http-route UserRouter`);
+          // await exec(`ongo make:tcp-route UserRouter`);
+          console.log(Green(`Project ${this.path(this.command(3)).split('/')[this.path(this.command(3)).split('/').length - 1]} created!`));
          
         }else{
           return console.log('project name required')
