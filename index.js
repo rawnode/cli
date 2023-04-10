@@ -3,14 +3,11 @@
 "use strict";
 
 /**
- * Author
- *  @name Ericson S. Weah  
- *  @email afrosintech@gmail.com
- *  @website https://www.afrosintech.com
- *  @github https://github.com/afrosintech
- *  @gitlab https://gitlab.com/afrosintech
- *  @npm https://www.npmjs.com/~afrosintech
- *  @phone +1.385.204.5167
+ *    @author Ericson Weah Dev  
+ *    email: ericson.weah@ericsonweah.dev
+ *    github: https://github.com/ericson-weah-dev
+ *    phone: +1.385.204.5167
+ *    Website: https://www.ericsonweah.dev
  *
  * @module Entry
  * @kind class

@@ -3,7 +3,11 @@
 "use strict";
 
 /**
- * @author Ericson S. Weah  <ericson.weah@gmail.com> <https://github.com/eweah>  <+1.385.204.5167>
+ *    @author Ericson Weah Dev  
+ *    email: ericson.weah@ericsonweah.dev
+ *    github: https://github.com/ericson-weah-dev
+ *    phone: +1.385.204.5167
+ *    Website: https://www.ericsonweah.dev
  *
  * @module CLI
  * @kind class
