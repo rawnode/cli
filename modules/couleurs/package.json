@@ -1,0 +1,35 @@
+{
+  "name": "couleurs",
+  "version": "0.0.0",
+  "description": "couleurs",
+  "private": true,
+  "main": "index.js",
+  "bin": {
+    "couleurs": "bin/index.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mongodb-model/couleurs.git"
+  },
+  "keywords": [
+    "couleurs",
+    "transform",
+    "duplex",
+    "stream",
+    "eventEmitter"
+  ],
+  "author": "Ericson S. weah <ericson.weah@gmail.com> (https://www.ericsonweah.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mongodb-model/couleurs/issues"
+  },
+  "homepage": "https://gitlab.com/mongodb-model/couleurs#readme"
+}

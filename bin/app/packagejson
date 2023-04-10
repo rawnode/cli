@@ -1,0 +1,40 @@
+{
+  "name": "ongo",
+  "version": "0.0.0",
+  "description": "mvc",
+  "main": "index.js",
+  "bin": {
+    "ongo": "bin/index.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/node-mvc/ongo.git"
+  },
+  "keywords": [
+    "mvc",
+    "nodejs",
+    "transform",
+    "duplex",
+    "stream",
+    "eventEmitter"
+  ],
+  "author": "Ericson S. weah <ericson.weah@gmail.com> (https://www.ericsonweah.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/node-mvc/ongo/issues"
+  },
+  "homepage": "https://gitlab.com/node-mvc/ongo#readme",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "mongodb-model": "file:src/modules/mongodb-model",
+    "vitest": "0.24.0"
+  }
+}

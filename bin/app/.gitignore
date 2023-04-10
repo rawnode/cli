@@ -1,0 +1,5 @@
+/node_modules
+./node_modules
+/src/modules/*/"^.git"
+./src/modules/*/"^.git"
+
